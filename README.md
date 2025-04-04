@@ -21,7 +21,7 @@ To run this project locally:
    ```
 2. Navigate to the project folder:
    ```bash
-   cd tic-tac-toe-flutter
+   cd x_o-flutter
    ```
 3. Run the app:
    ```bash
