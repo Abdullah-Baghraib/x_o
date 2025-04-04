@@ -1,4 +1,4 @@
-أكيد، تفضل هذا مثال احترافي لملف `README.md` تقدر تستخدمه وتعدله حسب ما يناسبك:
+
 # Tic Tac Toe – Flutter Game
 
 A simple **Tic Tac Toe** game built using **Flutter** as part of my learning journey in mobile development.
