@@ -17,7 +17,7 @@ To run this project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/tic-tac-toe-flutter.git
+   git clone https://github.com/Abdullah-Baghraib/x_o.git
    ```
 2. Navigate to the project folder:
    ```bash
