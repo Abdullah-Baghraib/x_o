@@ -15,8 +15,8 @@ class _HomeState extends State<Home> {
   int drow = 0;
   int filedBoxs = 0;
 
-  static var myNewFont = GoogleFonts.pressStart2p(textStyle: TextStyle(color: Colors.black , letterSpacing: 3)) ;
-  static var myNewFontWhite = GoogleFonts.pressStart2p(textStyle: TextStyle(color: Colors.white , letterSpacing: 3 , fontSize: 19)) ;
+  static var myNewFont = GoogleFonts.pressStart2p(textStyle: const TextStyle(color: Colors.black , letterSpacing: 3)) ;
+  static var myNewFontWhite = GoogleFonts.pressStart2p(textStyle: const TextStyle(color: Colors.white , letterSpacing: 3 , fontSize: 10)) ;
 
   List<String> x_o = [
     "",
@@ -103,7 +103,7 @@ class _HomeState extends State<Home> {
         return AlertDialog
         (
           
-          title: Text('Game Over'),
+          title: const Text('Game Over'),
           content: Text('Player ${winner} wins!'),
           actions: <Widget>[
             TextButton(
@@ -150,8 +150,8 @@ class _HomeState extends State<Home> {
         return AlertDialog
         (
           
-          title: Text('Game Over'),
-          content: Text('Drow'),
+          title: const Text('Game Over'),
+          content: const Text('Draw'),
           actions: <Widget>[
             TextButton(
               onPressed: () 
@@ -193,13 +193,13 @@ class _HomeState extends State<Home> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text("Player X",
-                              /*style: myNewFontWhit*/),
-                          SizedBox(height: 10),
+                              style: myNewFontWhite),
+                          const SizedBox(height: 10),
                           Text("${XScore.toString()}",
                               style: myNewFontWhite),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 70,
                       ),
                       Column(
@@ -207,20 +207,20 @@ class _HomeState extends State<Home> {
                         children: [
                           Text("Player O",
                             style: myNewFontWhite),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           Text("${OScore.toString()}",
                               style: myNewFontWhite)
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 70,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text("Drow",
+                          Text("Draw",
                               style: myNewFontWhite),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           Text("${drow.toString()}",
                               style: myNewFontWhite
                                   ),
@@ -234,10 +234,10 @@ class _HomeState extends State<Home> {
             Expanded(
               flex: 3,
               child: Container(
-                margin: EdgeInsets.all(20),
+                margin: const EdgeInsets.all(20),
                 child: GridView.builder(
                   itemCount: 9,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate:const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 3),
                   itemBuilder: (context, index) {
                     return GestureDetector(
@@ -251,7 +251,7 @@ class _HomeState extends State<Home> {
                             child: Text(
                               "${x_o[index]}",
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 40),
+                                  const TextStyle(color: Colors.white, fontSize: 40),
                             ),
                           )),
                     );

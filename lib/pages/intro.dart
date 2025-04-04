@@ -10,15 +10,18 @@ class intro extends StatefulWidget {
   State<intro> createState() => _introState();
 }
 
-class _introState extends State<intro> {
+class _introState extends State<intro> 
+{
+  
+  static var myNewFontWhit =  GoogleFonts.pressStart2p(textStyle:const TextStyle(color: Colors.white , letterSpacing: 3 , fontSize: 30));
+  
   @override
-  static var myNewFontWhit =  GoogleFonts.pressStart2p(textStyle: TextStyle(color: Colors.white , letterSpacing: 3 , fontSize: 30));
-
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[900],
       body: Container
       (
+
         width: double.infinity,
         child: Column
         (
@@ -26,8 +29,9 @@ class _introState extends State<intro> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: 
           [
+            const SizedBox(height: 40,),
             Text("TIC TAC TOE" , style: myNewFontWhit),
-            SizedBox(height: 200,),
+            const SizedBox(height: 200,),
             Container
             (
               child: AvatarGlow
@@ -36,7 +40,7 @@ class _introState extends State<intro> {
               glowShape: BoxShape.circle,
               curve: Curves.fastOutSlowIn,
                 // endRadius: 60.0,
-                duration: Duration(seconds: 2),
+                duration: const Duration(seconds: 2),
                 glowColor: Colors.white24,
                 repeat: true,
                 // repeatPauseDuration: Duration(seconds: 1),
@@ -57,13 +61,13 @@ class _introState extends State<intro> {
                 )
               ),
             ),
-            SizedBox(height: 300,),
+            const SizedBox(height: 250,),
             ElevatedButton
             (
               style: ElevatedButton.styleFrom
               (
 
-                padding: EdgeInsetsDirectional.symmetric(horizontal: 100 , vertical: 20),
+                padding:const EdgeInsetsDirectional.symmetric(horizontal: 80 , vertical: 20),
                 backgroundColor: Colors.white,
                 shape: RoundedRectangleBorder
                 (
@@ -74,7 +78,7 @@ class _introState extends State<intro> {
               {
                 Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context)=> Home()), (route) => false,);
               }, 
-              child: Text("Get Started" , style:  GoogleFonts.pressStart2p(textStyle: TextStyle(color: Colors.black , letterSpacing: 3 , fontSize: 18)),)
+              child: Text("Get Started" , style:  GoogleFonts.pressStart2p(textStyle: const TextStyle(color: Colors.black , letterSpacing: 3 , fontSize: 18)),)
             )
           ],
 
