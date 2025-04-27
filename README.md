@@ -10,6 +10,10 @@ A simple **Tic Tac Toe** game built using **Flutter** as part of my learning jou
 - Game reset and winner detection  
 - Clean and organized code structure
 
+## Screenshots
+![image1](https://github.com/user-attachments/assets/9488b68e-d653-4730-87d0-053cc3b38d5b)
+
+
 
 ## Getting Started
 
